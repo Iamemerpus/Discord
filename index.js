@@ -23,16 +23,16 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('996312025623965756')
+    .setApplicationId('')
     .setType('STREAMING')
     .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
     .setState('Recording')
-    .setName('Esther')
+    .setName('')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://media.discordapp.net/attachments/1099892530763538543/1197573641873924106/fbad87e7a1f248efbe29db90e2f47776.webp?') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('https://media.discordapp.net/attachments/1099892530763538543/1197573642347888680/287596f98304bf1adc2c411619ae8fef.jpg?') //You can put links in tenor or discord and etc.
+    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('Twitch') //Text when you hover the Small image
     .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
     .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = `[7/24] Uyanık 💀 [${newTime}]`;
+      const newDetails = ` [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
