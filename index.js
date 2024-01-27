@@ -35,7 +35,7 @@ client.on('ready', async () => {
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1150242860273254460/1190250393746280509/cc5323ff-e634-4a9b-8320-2cb09efa665a.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
     .addButton('My Site 🔨', 'https://vornexx.vercel.app/')
-    .addButton('In depth bio ℹ️ 💞', 'https://rentry.com/vornexx')
+    .addButton('In depth bio 💞', 'https://rentry.co/vornexx')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
