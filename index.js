@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'America/Port_of_Spain', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -20,22 +20,22 @@ function formatTime() { //Credits to himika#0001 and never#0001
 
 client.on('ready', async () => {
   console.clear();
-  console.log(`${client.user.tag} - rich presence started!`);
+  console.log(`${client.user.tag} - rpc started! check your profile ^^`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1189883886579232788')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
-    .setDetails(`Valorant [${formatTime()}]`)
+    .setURL('https://youtube.com/watch?v=xvFZjo5PgG0') //Must be a youtube video link 
+    .setState('Sleepy')
+    .setName('randomness')
+    .setDetails(`Hey 👋⚓ [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1150242860273254460/1190309175566282843/majo-no-tabitabi-the-journey-of-elaina_2.gif') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('insert funny text') //Text when you hover the Large image
+    .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1150242860273254460/1190250393746280509/cc5323ff-e634-4a9b-8320-2cb09efa665a.gif') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
+    .addButton('My Site 🔨', 'https://vornexx.vercel.app/')
+    .addButton('My Roblox Profile 🎮💻', 'https://www.roblox.com/users/1016710675/profile')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
@@ -44,7 +44,7 @@ client.on('ready', async () => {
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = ` [${newTime}]`;
+      const newDetails = `Hey 👋⚓ [${newTime}]`;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
