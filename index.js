@@ -30,7 +30,7 @@ client.on('ready', async () => {
     .setName('randomness')
     .setDetails(`Hey 👋⚓ [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://tenor.com/view/wink-anime-anime-wink-peace-peace-sign-gif-4591493253734534270') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://tenor.com/fDlfBIMbCxK.gif') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('insert funny text') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1150242860273254460/1206396977269440584/cd0qa1.gif?ex=65dbdbbd&is=65c966bd&hm=8b5855d5d1940919e2ca4c2aac25042a486c9035f52aa7f91efc8dc2d46a1cd5&') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
