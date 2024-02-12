@@ -25,17 +25,17 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1189883886579232788')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=Lkfr3dnNOAY') //Must be a youtube video link 
+    .setURL('https://youtube.com/watch?v=xvFZjo5PgG0') //Must be a youtube video link 
     .setState('Sleepy')
     .setName('randomness')
     .setDetails(`Hey 👋⚓ [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://files.catbox.moe/cd0qa1.gif' //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1150242860273254460/1201348112325824592/latest_banner.gif') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('insert funny text') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1150242860273254460/1190250393746280509/cc5323ff-e634-4a9b-8320-2cb09efa665a.gif') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('You weirdo, why would you hover over the small image.') //Text when you hover the Small image
-    .addButton('My Site 🔨', 'https://vornexx.is-a.dev/')
-    .addButton('In depth bio 💞', 'https://rentry.co/vornexx')
+    .addButton('My Site 🔨', 'https://vornexx.is-a.dev')
+    .addButton('My Rentry Page ✏️💞', 'https://rentry.co/vornexx')
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
