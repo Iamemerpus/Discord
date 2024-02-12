@@ -25,7 +25,7 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1189883886579232788')
     .setType('STREAMING')
-    .setURL('https://youtube.com/watch?v=xvFZjo5PgG0') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=Lkfr3dnNOAY') //Must be a youtube video link 
     .setState('Sleepy')
     .setName('randomness')
     .setDetails(`Hey 👋⚓ [${formatTime()}]`)
