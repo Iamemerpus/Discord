@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/Port_of_Spain', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'VietNam/Ho_Chi_Minh_City', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -23,9 +23,9 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rpc started! check your profile ^^`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1189883886579232788')
+    .setApplicationId('1046430425905643612')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=4-siHP8YjhI') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=-k7kjk34Asw') //Must be a youtube video link 
     .setState('Sleepy')
     .setName('randomness')
     .setDetails(`Hey 👋⚓ [${formatTime()}]`)
